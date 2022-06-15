@@ -39,7 +39,7 @@
 `db.produto.find({qtd: {$gte: 10, $lte: 20}})`
 
 **e) Conexão = USB e não apresentar o campo _id e qtd**
-` db.produto.find({conexao: {$eq: 'USB'},{_id: 0}, {qtd: 0}})`
+` db.produto.find({'descricao.conexao': {$eq: "USB"},{_id: 0}, {qtd: 0}})`
 
 **f) SO que contenha “Windows” ou “Windows 10”**
 `db.produto.find({'descricao.so:' {$in ["Windows","Windows 10"]}})` 
