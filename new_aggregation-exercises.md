@@ -41,7 +41,7 @@ db.alunos.aggregate({$lookup: {
 
 **4. Realizar o left outer join da collection alunos e cursos, quando o id_curso dos 2 forem o mesmo e visualizar apenas os seguintes campos**
 ```
-Alunos: id_discente, nivel
+Alunos: id_discente, nivel, nome
 Cursos: id_curso, id_unidade, nome
 ```
 
