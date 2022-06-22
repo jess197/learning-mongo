@@ -10,6 +10,8 @@ use escola
 
 **3. Importe o arquivo “data-load/alunos.csv” para a collection alunos, com os seguintes atributos:**
 
+I used NoSQLBooster. 
+
 ```
 id_discente: Number
 nome: String
@@ -18,6 +20,22 @@ nivel: String
 id_curso: Number
 Arquivos para Dataset
 ```
+```
+import into "escola.alunos" start...
+import into "escola.alunos" 100%, 10000 docs inserted.
+import into "escola.alunos" finished.
+
+A total of 10000 document(s) have been imported into 1 collection(s).
+{
+  "alunos": {
+    "nInserted": 10000,
+    "nModified": 0,
+    "nSkipped": 0,
+    "failed": 0
+  }
+}
+```
+
 
 **4. Visualizar os valores únicos do “nivel” de cada “ano_ingresso”**
 
